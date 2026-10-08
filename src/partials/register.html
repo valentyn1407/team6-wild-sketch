@@ -1,0 +1,79 @@
+<section class="register" id="register">
+  <div class="container register-container">
+    <div class="register-content">
+      <h2 class="register-title">Register</h2>
+      <form class="register-form">
+        <div class="register-field">
+          <label class="register-label" for="register-name">Name</label>
+          <input
+            class="register-input"
+            type="text"
+            id="register-name"
+            name="name"
+            placeholder="Your name"
+            autocomplete="name"
+            required
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+          />
+        </div>
+        <div class="register-field">
+          <label class="register-label" for="register-email">Email</label>
+          <input
+            class="register-input"
+            type="email"
+            id="register-email"
+            name="email"
+            placeholder="Your email"
+            autocomplete="email"
+            required
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+        </div>
+        <div class="register-field">
+          <label class="register-label" for="register-message">Message</label>
+          <textarea
+            class="register-message"
+            id="register-message"
+            name="message"
+            placeholder="Type your message..."
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <button class="register-button" type="submit">Register</button>
+      </form>
+    </div>
+    <picture class="register-picture">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          ./img/register/register-desktop.jpg    1x,
+          ./img/register/register-desktop@2x.jpg 2x
+        "
+        width="640"
+        height="734"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/register/register-tablet.jpg    1x,
+          ./img/register/register-tablet@2x.jpg 2x
+        "
+        width="704"
+        height="362"
+      />
+      <img
+        class="register-image"
+        src="./img/register/register-mobile.jpg"
+        srcset="
+          ./img/register/register-mobile.jpg    1x,
+          ./img/register/register-mobile@2x.jpg 2x
+        "
+        alt="Students painting outdoors"
+        width="335"
+        height="286"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>

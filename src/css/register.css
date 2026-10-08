@@ -1,0 +1,134 @@
+.register {
+  padding: 64px 0;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.register-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.register-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.register-input,
+.register-message {
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-neutral-darkest);
+  background-color: var(--opacity-neutral-darkest-5);
+  border: 1px solid var(--opacity-neutral-darkest-15);
+  border-radius: 12px;
+}
+
+.register-input {
+  height: 40px;
+  padding: 8px 12px;
+}
+
+.register-message {
+  height: 180px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.register-input::placeholder,
+.register-message::placeholder {
+  color: var(--opacity-neutral-darkest-60);
+  opacity: 1;
+}
+.register-input:focus {
+  border-color: var(--color-neutral-darkest);
+  outline: none;
+}
+
+.register-message:focus {
+  border-color: var(--opacity-neutral-darkest-60);
+  outline: none;
+}
+.register-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  padding: 10px 24px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-neutral-darkest);
+  background-color: var(--color-carissma);
+  border: 1px solid var(--color-carissma);
+  border-radius: 100px;
+}
+
+.register-button:hover {
+  opacity: 0.5;
+}
+
+.register-button:active {
+  opacity: 0.7;
+}
+
+.register-button:focus-visible {
+  outline: 2px solid var(--color-neutral-darkest);
+  outline-offset: 3px;
+}
+.register-picture {
+  display: block;
+  width: 100%;
+}
+
+.register-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) {
+  .register-button {
+    width: 340px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .register {
+    padding: 112px 0;
+  }
+
+  .register-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .register-content,
+  .register-picture {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .register-button {
+    width: 304px;
+  }
+}
