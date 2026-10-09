@@ -36,22 +36,25 @@
   }
 }
 .hero-text {
-  font-family: var(--font-family);
-  color: var(--color-scheme-1-text);
   margin-bottom: 32px;
-
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
 }
 .hero-buttons {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 @media (min-width: 768px) {
   .hero-buttons {
     flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-buttons {
+    gap: 16px;
   }
 }
 .hero-btn {
