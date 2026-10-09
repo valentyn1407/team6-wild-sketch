@@ -21,10 +21,67 @@
       rel="stylesheet"
     />
     <!-- Styles -->
-    <link rel="stylesheet" crossorigin href="/team6-wild-sketch/assets/index-D4TpEkP1.css">
+    <link rel="stylesheet" crossorigin href="/team6-wild-sketch/assets/index-BKCtb8YH.css">
   </head>
   <body>
-    
+    <header class="header">
+  <div class="container header-container">
+    <a class="header-logo" href="./index.html" aria-label="Wild Sketch home">
+      <svg class="header-logo-icon" width="117" height="50" aria-hidden="true">
+        <use href="/team6-wild-sketch/assets/symbol-defs-BvBizc2E.svg#company-logo"></use>
+      </svg>
+    </a>
+
+    <nav class="header-nav" aria-label="Main navigation">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#events">Events</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#team">Team</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#feedbacks">Feedbacks</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-register" href="#register">Register</a>
+      <button
+        class="header-menu-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-controls="mobile-menu"
+        aria-expanded="true"
+      >
+        <svg
+          class="header-menu-icon-open"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
+          <use href="/team6-wild-sketch/assets/symbol-defs-BvBizc2E.svg#burger"></use>
+        </svg>
+        <svg
+          class="header-menu-icon-close"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
+          <use href="/team6-wild-sketch/assets/symbol-defs-BvBizc2E.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
 
     <main>
       <!-- Loads the specified .html file -->
@@ -60,7 +117,7 @@
   </div>
 </section>
 
-      <section class="benefits">
+      <section class="benefits" id="benefits">
   <div class="container">
     <div class="benefits-content">
       <h2 class="benefits-title">
@@ -207,7 +264,28 @@
 
     
 
-    
+    <div class="mobile-menu" id="mobile-menu">
+  <nav class="container mobile-menu-nav" aria-label="Mobile navigation">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#benefits">Benefits</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#gallery">Gallery</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#events">Events</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#team">Team</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link" href="#feedbacks">Feedbacks</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
 
     <script src="./main.js"></script>
   </body>
