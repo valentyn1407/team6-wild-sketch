@@ -8,11 +8,8 @@
 
 .events-title {
   margin-bottom: 8px;
-  font-family: var(--second-family);
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+
+  color: var(--color-scheme-2-text);
 }
 
 .events-description {
@@ -104,8 +101,8 @@
   font-weight: 500;
   line-height: 1.5;
   transition:
-    background-color 250ms ease,
-    border-color 250ms ease;
+    background-color 250ms ease-in-out,
+    border-color 250ms ease-in-out;
 }
 
 .events-register:hover,
@@ -199,4 +196,3 @@
     font-size: 20px;
   }
 }
-

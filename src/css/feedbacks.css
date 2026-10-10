@@ -1,21 +1,11 @@
 .feedbacks {
-  padding: 64px 20px;
+  padding: 64px 0;
 }
 
 .feedbacks-title {
-  font-family: var(--second-family);
-
   text-align: center;
-
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
 
   margin-bottom: 32px;
-
-  text-align: center;
-  color: #0c0708;
 }
 
 @media only screen and (min-width: 1440px) {
