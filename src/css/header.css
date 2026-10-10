@@ -43,6 +43,9 @@ html {
 .header-nav-link {
   display: block;
   padding: 24px 0;
+
+  transition: 250ms ease-in-out;
+  transition-property: opacity;
 }
 
 .header-actions {
@@ -61,6 +64,9 @@ html {
   color: var(--color-scheme-2-text);
   background-color: var(--color-carissma);
   font-weight: 500;
+
+  transition: 250ms ease-in-out;
+  transition-property: opacity;
 }
 
 .header-menu-toggle {
