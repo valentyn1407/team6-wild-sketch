@@ -24,6 +24,7 @@
 
   font-size: 40px;
   line-height: 1;
+  color: var(--color-scheme-2-text);
 }
 @media (min-width: 768px) {
   .hero-title {
@@ -83,7 +84,7 @@
 .secondary-btn {
   border: 1px solid var(--color-scheme-1-border);
   background-color: transparent;
-  color: var(--color-scheme-1-text);
+
   border-radius: 100px;
   padding: 10px 24px;
 }
@@ -93,7 +94,6 @@
 }
 .hero-image {
   width: 335px;
-  max-width: 100%;
 }
 @media (min-width: 768px) {
   .hero-image {
@@ -107,7 +107,5 @@
   }
 }
 .hero-image img {
-  display: block;
   width: 100%;
-  height: auto;
 }

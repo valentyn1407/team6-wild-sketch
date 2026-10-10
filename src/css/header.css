@@ -6,7 +6,7 @@ html {
   position: sticky;
   top: 0;
   z-index: 1000;
-  color: var(--color-scheme-1-text);
+
   background-color: var(--color-scheme-1-background);
 }
 

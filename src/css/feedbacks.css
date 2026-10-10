@@ -61,16 +61,11 @@
 }
 
 .feedbacks-quote {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
+
   margin-bottom: 24px;
-  color: #0c0708;
 }
 
 .feedbacks-avatar-name {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #0c0708;
 }
