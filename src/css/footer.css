@@ -20,8 +20,7 @@
 
 .footer-logo-icon{
     display: block;
-    width: 268px;
-    height: 115px;
+    height: auto;
 }
 
 .footer-nav{
@@ -55,6 +54,8 @@
 .footer-divider{
     width: 100%;
     height: 1px;
+    margin: 0;
+    flex-shrink: 0;
     margin-bottom: 32px;
     background-color: var(--color-scheme-1-border);
 }
@@ -87,7 +88,7 @@
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
     .footer{
         padding: 80px 64px;
     }
