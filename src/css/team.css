@@ -1,0 +1,119 @@
+.team {
+padding: 64px 0;
+}
+@media only screen and (min-width: 768px) {
+  .team {
+    padding: 64px 0;
+  }
+}
+.team .container{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+}
+@media only screen and (min-width: 1440px) {
+  .team {
+    padding: 64px;
+  }
+}
+.team-content{
+gap: 24px;
+margin-bottom: 40px;
+}
+.team-title {
+font-family: "Caveat", sans-serif;
+font-weight: 700;
+font-size: 48px;
+line-height: 1.1;
+letter-spacing: -0.01em;
+text-align: center;
+margin-bottom: 24px;
+}
+.team-text{
+font-family: "Tajawal", sans-serif;
+font-weight: 400;
+font-size: 18px;
+text-align: center;
+}
+@media only screen and (max-width: 767.98px) {
+  .team-text {
+    width: 335px;
+  }
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+/* @media only screen and (min-width: 768px) {
+  .team-list {
+gap: 32px;
+  }
+} */
+@media only screen and (min-width: 1440px) {
+  .team-list {
+    gap: 0 32px;
+  }
+}
+.team-item {
+  max-width: 335px;
+  width: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+gap: 24px;
+
+margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .team-item {
+    max-width: 340px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* width: calc((100% - 24px) / 2); */
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .team-item {
+    width: calc((100% - 32px * 5) / 6);
+  }
+} 
+.team-avatar{
+  margin: 0 auto;
+} 
+.team-wrapper {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .team-wrapper {
+    margin-bottom: 54px;
+  }
+} 
+@media only screen and (min-width:768px and max-width:1439.98px) {
+     .team-wrapper:nth-last-child(-n+2) {
+      margin-bottom: 27px;
+    }
+} 
+@media only screen and (min-width: 1440px) {
+  .team-wrapper {
+    margin-bottom: 0;
+  }
+}
+.team-name {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.team-specialist {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
