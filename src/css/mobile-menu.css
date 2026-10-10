@@ -41,6 +41,9 @@
   display: block;
   padding: 10px 0;
   text-align: center;
+
+  font-size: 18px;
+  color: var(--color-scheme-2-text);
 }
 
 .mobile-menu-link:hover {
