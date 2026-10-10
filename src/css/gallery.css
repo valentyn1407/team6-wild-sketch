@@ -1,0 +1,124 @@
+.gallery {
+    padding: 48px 0;
+}
+
+.gallery-title {
+    margin: 0 auto 8px;
+    font-family: var(--second-family);
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-neutral-darkest);
+}
+
+.gallery-description {
+    max-width: 600px;
+    margin: 0 auto 32px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-neutral-dark);
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery-item {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--color-carissma-lightest);
+    aspect-ratio: 1 / 1;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 300ms ease;
+}
+
+.gallery-item:nth-child(-n + 2) {
+    grid-column: span 2;
+}
+
+.gallery-item:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+.gallery-item:nth-child(n + 4) {
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        padding: 64px 0;
+    }
+
+    .gallery-title {
+        font-size: 36px;
+    }
+
+    .gallery-description {
+        margin-bottom: 40px;
+    }
+
+    .gallery-list {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .gallery-item:nth-child(-n + 3) {
+        grid-column: span 4;
+    }
+    
+    .gallery-item:nth-child(n + 4) {
+        grid-column: span 3;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .gallery {
+        padding: 80px 0;
+    }
+
+    .gallery-title {
+        font-size: 40px;
+    }
+
+    .gallery-description {
+        margin-bottom: 48px;
+    }
+
+    .gallery-list {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .gallery-item:nth-child(-n + 3) {
+        grid-column: span 4;
+    }
+
+    .gallery-item:nth-child(n + 4) {
+        grid-column: span 3;
+    }
+}
+
+@media screen and (hover: hover) {
+    .gallery-item:hover .gallery-image {
+        transform: scale(1.04);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-image {
+        transition: none;
+    }
+}
